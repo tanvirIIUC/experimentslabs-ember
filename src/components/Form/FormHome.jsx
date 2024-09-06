@@ -4,6 +4,8 @@ import HeardAboutUsForm from "./HeardAboutUsForm";
 import InterestAndGoalsForm from "./InterestAndGoalsForm";
 import EducationForm from "./EducationForm";
 import ExamsForm from "./ExamsForm";
+import ActivitiesForm from "./ActivitiesForm";
+import SuccessForm from "./SuccessForm";
 
 const FormHome = () => {
   const [currentPage, setCurrentPage] = useState("Basic Details");
@@ -82,6 +84,12 @@ const updatedSteps = steps.map((step, index) => {
             }
             {
                 currentPage === 'Exams' && <div> <ExamsForm setCurrentPage={setCurrentPage}/> </div>
+            }
+            {
+                currentPage === 'Activities' && <div> <ActivitiesForm setCurrentPage={setCurrentPage}/> </div>
+            }
+            {
+                currentPage === 'Success' && <div> <SuccessForm setCurrentPage={setCurrentPage}/> </div>
             }
         
         </div>

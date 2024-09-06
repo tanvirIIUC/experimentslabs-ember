@@ -44,7 +44,7 @@ const ExamsForm = ({ setCurrentPage }) => {
   };
 
   return (
-    <div className="mx-[-50px]">
+    <div className="mx-[-50px] mt-10">
       <div className="max-w-2xl mx-auto p-6">
         <div className="mb-4">
           <label className="block text-gray-700 font-medium mb-2">
@@ -163,7 +163,7 @@ const ExamsForm = ({ setCurrentPage }) => {
 
       <div className="flex justify-end mt-5">
         <button
-          onClick={() => setCurrentPage("Exams")}
+          onClick={() => setCurrentPage("Activities")}
           className="text-[white] bg-[#020246] px-4 py-2 rounded-md"
         >
           Continue <ArrowForwardIcon />
